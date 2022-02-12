@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcards</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1>flashcards</h1>
+    </header>
+    <main class="main">
+        <section class="menu">
+            <button class="add-new-card-btn">add new card</button>
+            <button class="show-random-card-btn">show random card</button>
+            <button class="see-all-cards-btn">see all cards</button>
+        </section>
+        <section class="add-card hide">
+            <section class="name-card">
+                <input type="text" id="name-input" placeholder="enter card name">
+                <button class="to-description-btn">next</button>
+            </section>
+            <section class="describe-card hide">
+                <textarea id="description-input" cols="30" rows="10" placeholder="write definition"></textarea>
+                <button class="store-card-btn">add card</button>
+            </section>
+            <button class="back-to-menu-btn">back to menu</button>
+        </section>
+        <section class="random-card hide">
+            <div class="card"></div>
+            <button class="next-random-card-btn">next card</button>
+            <button class="back-to-menu-btn">back to menu</button>
+        </section>
+        <section class="all-cards hide">
+            <div class="all-cards-container"></div>
+            <button class="back-to-menu-btn">back to menu</button>
+        </section>
+        <section class="view-single-card hide"></section>
+    </main>
+    
+    <script src="main.js"></script>
+</body>
+</html>
